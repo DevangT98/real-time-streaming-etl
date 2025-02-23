@@ -51,15 +51,13 @@ def stream_data():
     producer.send("users_created", json.dumps(res).encode("utf-8"))
 
 
-# with DAG(
-#     "user_automation",
-#     default_args=default_args,
-#     schedule_interval="@daily",
-#     catchup=False,
-# ) as dag:
+with DAG(
+    "user_automation",
+    default_args=default_args,
+    schedule_interval="@daily",
+    catchup=False,
+) as dag:
 
-#     streaming_task = PythonOperator(
-#         task_id="stream_data_from_api", python_callable=stream_data
-#     )
-
-# stream_data()
+    streaming_task = PythonOperator(
+        task_id="stream_data_from_api", python_callable=stream_data
+    )
