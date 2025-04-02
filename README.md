@@ -64,4 +64,10 @@ Follow these steps to set up the pipeline locally.
 
 ```bash
 git clone https://github.com/DevangT98/real-time-streaming-etl.git
+
 cd real-time-streaming-etl 
+```
+### 2. Run docker compose
+```bash
+docker compose up
+```
