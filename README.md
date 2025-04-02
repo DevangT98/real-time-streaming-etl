@@ -6,13 +6,11 @@ This project showcases a complete real-time data engineering pipeline using mode
 
 ## 📚 Table of Contents
 
-- [Introduction](#introduction)
-- [System Architecture](#system-architecture)
-- [What You'll Learn](#what-youll-learn)
-- [Technologies](#technologies)
-- [Getting Started](#getting-started)
-- [Video Walkthrough](#video-walkthrough)
-
+- [📌 Introduction](#️-introduction)
+- [🏗️ System Architecture](#️-system-architecture)
+- [🧠 What You'll Learn](#️-what-youll-learn)
+- [💡 Technologies](#️-technologies)
+- [🚀 Getting Started](#️-getting-started)
 ---
 
 ## 📌 Introduction
