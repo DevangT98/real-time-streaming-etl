@@ -4,7 +4,7 @@ This project showcases a complete real-time data engineering pipeline using mode
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 
 - [Introduction](#introduction)
 - [System Architecture](#system-architecture)
@@ -14,7 +14,7 @@ This project showcases a complete real-time data engineering pipeline using mode
 
 ---
 
-## 📌 Introduction
+## Introduction
 
 This end-to-end project demonstrates how to build a real-time streaming ETL pipeline. You'll learn how to:
 
@@ -28,13 +28,13 @@ The source data is fetched from the public `randomuser.me` API, emulating real-w
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ![System Architecture](Data%20engineering%20architecture.png)
 
 ---
 
-## 🧠 What You'll Learn
+## What You'll Learn
 
 - Setting up and scheduling ETL workflows with **Airflow**
 - Real-time streaming with **Kafka + Zookeeper**
@@ -44,7 +44,7 @@ The source data is fetched from the public `randomuser.me` API, emulating real-w
 
 ---
 
-## 💡 Technologies
+## Technologies
 
 - **Apache Airflow** – Workflow orchestration
 - **Python** – Used for the API client and Airflow DAGs
@@ -56,18 +56,12 @@ The source data is fetched from the public `randomuser.me` API, emulating real-w
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to set up the pipeline locally.
 
-### 1️⃣ Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/DevangT98/real-time-streaming-etl.git
 cd real-time-streaming-etl 
-```
-### 2️⃣ Run docker compose in your terminal
-
-```bash
-docker compose up 
-```
