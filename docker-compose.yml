@@ -17,6 +17,7 @@ services:
       retries: 5
     networks:
       - confluent
+
   broker:
     image: confluentinc/cp-server:7.6.0
     hostname: broker
@@ -53,6 +54,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
   schema-registry:
     image: confluentinc/cp-schema-registry:7.6.0
     hostname: schema-registry
@@ -73,6 +75,7 @@ services:
       interval: 30s
       timeout: 10s
       retries: 5
+
   control-center:
     image: confluentinc/cp-enterprise-control-center:7.6.0
     hostname: control-center
@@ -100,6 +103,7 @@ services:
       interval: 30s
       timeout: 10s
       retries: 5
+
   webserver:
     image: apache/airflow:2.6.0-python3.9
     command: webserver
@@ -128,6 +132,7 @@ services:
       retries: 3
     networks:
       - confluent
+
   scheduler:
     image: apache/airflow:2.6.0-python3.9
     depends_on:
@@ -145,6 +150,7 @@ services:
     command: bash -c "pip install -r ./requirements.txt && airflow db upgrade && airflow scheduler"
     networks:
       - confluent
+
   postgres:
     image: postgres:14.0
     environment:
@@ -157,6 +163,7 @@ services:
         max-file: "3"
     networks:
       - confluent
+
   spark-master:
     image: bitnami/spark:latest
     command: bin/spark-class org.apache.spark.deploy.master.Master
