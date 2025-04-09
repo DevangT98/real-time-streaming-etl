@@ -67,7 +67,13 @@ git clone https://github.com/DevangT98/real-time-streaming-etl.git
 
 cd real-time-streaming-etl 
 ```
-### 2. Run docker compose
+
+### 2. Install requirements
+
+```bash
+pip install -r requirements.txt
+```
+### 3. Run docker compose
 ```bash
 docker compose up
 ```
